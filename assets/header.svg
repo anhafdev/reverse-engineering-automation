@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="API Reverse Engineering and Automation by F. ANHAF DEV">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#1F2740" stroke-width="1" opacity="0.55"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.2" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#2F6BFF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#2F6BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#2F6BFF"/>
+      <stop offset="0.75" stop-color="#5B8CFF"/>
+      <stop offset="1" stop-color="#E5383B"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="340" rx="18"/></clipPath>
+    <style>
+      .mono{font-family:'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .sans{font-family:'Inter','Segoe UI',-apple-system,Helvetica,Arial,sans-serif}
+      .hex{stroke-dasharray:760;stroke-dashoffset:760;animation:draw 2.2s ease-out forwards}
+      .edge{stroke-dasharray:6 6;animation:flow 1.6s linear infinite}
+      .node{animation:pulse 2.4s ease-in-out infinite}
+      .n2{animation-delay:.4s}.n3{animation-delay:.8s}.n4{animation-delay:1.2s}.n5{animation-delay:1.6s}
+      .eye{animation:blink 3s ease-in-out infinite}
+      .fade{opacity:0;animation:fadein .9s ease-out forwards}
+      .d1{animation-delay:.3s}.d2{animation-delay:.7s}.d3{animation-delay:1.1s}.d4{animation-delay:1.5s}.d5{animation-delay:1.9s}
+      .cursor{animation:caret 1s steps(1) infinite}
+      .packet{animation:travel 3.6s linear infinite}
+      .p2{animation-delay:1.2s}.p3{animation-delay:2.4s}
+      .bar{transform-origin:0 0;transform:scaleX(0);animation:grow 1.6s .4s ease-out forwards}
+      @keyframes draw{to{stroke-dashoffset:0}}
+      @keyframes flow{to{stroke-dashoffset:-24}}
+      @keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}45%{opacity:.35}}
+      @keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+      @keyframes caret{50%{opacity:0}}
+      @keyframes travel{0%{transform:translateX(0);opacity:0}8%{opacity:1}92%{opacity:1}100%{transform:translateX(640px);opacity:0}}
+      @keyframes grow{to{transform:scaleX(1)}}
+      @media (prefers-reduced-motion:reduce){*{animation:none!important;opacity:1!important;stroke-dashoffset:0!important;transform:none!important}}
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="340" fill="#0A0E1A"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+    <rect width="1200" height="340" fill="url(#glow)"/>
+
+    <g transform="translate(190 170)">
+      <polygon class="hex" points="0,-118 102,-59 102,59 0,118 -102,59 -102,-59" fill="#121829" fill-opacity="0.6" stroke="#2F6BFF" stroke-width="3"/>
+      <polygon points="0,-92 80,-46 80,46 0,92 -80,46 -80,-46" fill="none" stroke="#1F2740" stroke-width="1.5"/>
+      <g stroke="#5B8CFF" stroke-width="1.6" fill="none" opacity="0.85">
+        <path class="edge" d="M-52,-34 L0,-6 L48,-38"/>
+        <path class="edge" d="M0,-6 L0,46"/>
+        <path class="edge" d="M-52,-34 L-46,30 L0,46 L44,28 L48,-38"/>
+      </g>
+      <circle class="node" cx="-52" cy="-34" r="7" fill="#5B8CFF"/>
+      <circle class="node n2" cx="48" cy="-38" r="7" fill="#5B8CFF"/>
+      <circle class="node n3" cx="-46" cy="30" r="6" fill="#2F6BFF"/>
+      <circle class="node n4" cx="44" cy="28" r="6" fill="#2F6BFF"/>
+      <circle class="node n5" cx="0" cy="46" r="6" fill="#2F6BFF"/>
+      <circle class="eye" cx="0" cy="-6" r="9" fill="#E5383B"/>
+      <circle cx="0" cy="-6" r="16" fill="none" stroke="#E5383B" stroke-opacity="0.35" stroke-width="1.5"/>
+    </g>
+
+    <g transform="translate(360 0)">
+      <text class="mono fade d1" x="0" y="86" fill="#8A93A6" font-size="15" letter-spacing="5">F. ANHAF DEV  ·  ANHAF STUDIO</text>
+      <text class="sans fade d2" x="0" y="146" fill="#E8ECF4" font-size="50" font-weight="800" letter-spacing="-1">API Reverse Engineering</text>
+      <text class="sans fade d3" x="0" y="204" fill="#5B8CFF" font-size="50" font-weight="800" letter-spacing="-1">&amp; Automation</text>
+      <text class="sans fade d4" x="0" y="244" fill="#8A93A6" font-size="18">Traffic analysis · Private API integration · Python SDKs · Scraping · Telegram bots</text>
+      <g class="fade d5">
+        <rect x="0" y="266" width="560" height="38" rx="8" fill="#121829" stroke="#1F2740"/>
+        <text class="mono" x="16" y="291" font-size="15" fill="#8A93A6"><tspan fill="#E5383B">❯</tspan> <tspan fill="#E8ECF4">capture</tspan> --app ./client.apk <tspan fill="#5B8CFF">→</tspan> openapi.yaml <tspan class="cursor" fill="#5B8CFF">▌</tspan></text>
+      </g>
+    </g>
+
+    <g transform="translate(360 322)">
+      <circle class="packet" cx="0" cy="0" r="3.5" fill="#5B8CFF"/>
+      <circle class="packet p2" cx="0" cy="0" r="3.5" fill="#5B8CFF"/>
+      <circle class="packet p3" cx="0" cy="0" r="3.5" fill="#E5383B"/>
+    </g>
+
+    <rect class="bar" x="0" y="334" width="1200" height="6" fill="url(#accent)"/>
+  </g>
+</svg>
