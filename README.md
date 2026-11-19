@@ -195,7 +195,7 @@ Analysing traffic of apps you own or have permission to work with is standard en
 <div align="center">
 
 [![Telegram](https://img.shields.io/badge/Message%20on%20Telegram-@anhafxd-2F6BFF?style=for-the-badge&logo=telegram&logoColor=white&labelColor=121829)](https://t.me/anhafxd)
-[![Email](https://img.shields.io/badge/Email-founder@anhaf.dev-2F6BFF?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=121829)](mailto:founder@anhaf.dev)
+[![Email](https://img.shields.io/badge/Email-founder@anhaf.dev-2F6BFF?style=for-the-badge&logo=maildotru&logoColor=white&labelColor=121829)](mailto:contact@anhaf.dev)
 [![Website](https://img.shields.io/badge/Website-anhaf.dev-2F6BFF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=121829)](https://anhaf.dev)
 
 [![Channel](https://img.shields.io/badge/Updates-t.me/anhafdev-121829?style=for-the-badge&logo=telegram&logoColor=5B8CFF)](https://t.me/anhafdev)
